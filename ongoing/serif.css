@@ -109,8 +109,13 @@ body.bp-body {
 #centercontent {
     line-height: 1.45;
     background: #fff;
-    margin-right: 240px;
     padding-left: 8px;
+}
+
+@media screen and (min-width: 560px) {
+    #centercontent {
+        margin-right: 240px;
+    }
 }
 
 code {
@@ -350,15 +355,20 @@ ol { margin-right: 40px; }
 }
 
 #rightcontent {
-    padding-left: 10px;
     font-size: 0.95em;
     line-height: 1.45;
-    position: absolute; top: 0; right: 0;
+    top: 0; right: 0;
     width: 212px;
     margin: 0;
     padding-top: 0;
     padding-bottom: 0;
-    border-left: 1px solid #040;
+}
+@media screen and (min-width: 560px) {
+    #rightcontent {
+        border-left: 1px solid #040;
+        padding-left: 10px;
+        position: absolute;
+    }
 }
 .score {
     text-align: right;
