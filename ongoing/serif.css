@@ -160,10 +160,6 @@ dfn { font-style: italic; }
     margin: 10px 20px 0 0;
 }
 
-#rightcontent.frontpage {
-    margin-top: 6px;
-}
-
 #search > form {
     font-family: Verdana, Arial, Helvetica, sans-serif;
 }
