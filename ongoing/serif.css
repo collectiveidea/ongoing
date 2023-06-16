@@ -19,35 +19,26 @@ a {
     text-decoration: none;
 }
 .bp-text a {
-    text-decoration: none;
     font-weight: bold;
     color: #ddd;
 }
 #centercontent a {
-    text-decoration: none;
     color: #933;
 }
-.el a {
-    text-decoration: none;
-    font-weight: bold;
-}
+.el a,
 .ot a {
-    text-decoration: none;
     font-weight: bold;
 }
 #rightcontent a {
-    text-decoration: none;
     font-weight: bold;
     color: #535353;
 }
 
 #cats a {
-    text-decoration: none;
     font-weight: bold;
     color: #535353;
 }
 #cats a.leaf {
-    text-decoration: none;
     font-weight: bold;
 }
 
@@ -131,18 +122,14 @@ code {
     background: #eee;
 }
 
+.comment-a,
+.comment-b {
+    padding: 1px 10px;
+}
 .comment-a {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
     background: #eee;
 }
 .comment-b {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
     background: #ddd;
 }
 
@@ -294,11 +281,7 @@ ol { margin-right: 40px; }
     color: #535353;
 }
 
-.comment-a p {
-    /* hyphens: auto; */
-    text-align: left;
-}
-
+.comment-a p,
 .comment-b p {
     /* hyphens: auto; */
     text-align: left;
@@ -324,7 +307,6 @@ ol { margin-right: 40px; }
 }
 
 #centercontent p a.plink {
-    text-decoration: none;
     color: #fff; /* the page background colour */
 }
 
