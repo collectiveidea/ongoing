@@ -1,26 +1,26 @@
 body {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
     background: #fff;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
     color: #535353;
-    padding: 0;
     margin: 0 auto;
     max-width: 90vw;
+    padding: 0;
 }
 body.bp-body {
-    padding: 0;
     color: #ddd;
     /*background: #666;
     background: #222; */
     margin: 0 auto;
     max-width: 5000px;
+    padding: 0;
 }
 
 a {
     text-decoration: none;
 }
 .bp-text a {
-    font-weight: bold;
     color: #ddd;
+    font-weight: bold;
 }
 #centercontent a {
     color: #933;
@@ -30,13 +30,13 @@ a {
     font-weight: bold;
 }
 #rightcontent a {
-    font-weight: bold;
     color: #535353;
+    font-weight: bold;
 }
 
 #cats a {
-    font-weight: bold;
     color: #535353;
+    font-weight: bold;
 }
 #cats a.leaf {
     font-weight: bold;
@@ -44,13 +44,13 @@ a {
 
 #banner {
     background-color: #333;
-    color: #fff;
     /* Replace background here */
     background-image: url("redclouds60.jpg");
     background-repeat: repeat-x;
+    color: #fff;
     height: 60px;
-    position: relative;
     margin: 0;
+    position: relative;
 }
 #bp-banner {
     color: white;
@@ -64,10 +64,10 @@ html>body #banner, html>body #bp-banner {
 .big { font-size: 14px; }
 
 .big-pic {
+    border: 2px solid #ddd;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    border: 2px solid #ddd;
 }
 
 .bp-narrative {
@@ -80,9 +80,9 @@ html>body #banner, html>body #bp-banner {
 }
 
 .bp-background {
-    padding-top: 20px;
-    padding-bottom: 20px;
     margin-top: 8px;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
 .bp-text {
@@ -100,8 +100,8 @@ html>body #banner, html>body #bp-banner {
 }
 
 #centercontent {
-    line-height: 1.45;
     background: #fff;
+    line-height: 1.45;
     padding-left: 8px;
 }
 
@@ -113,9 +113,10 @@ html>body #banner, html>body #bp-banner {
 
 code {
     font-family: monospace;
-    font-weight: bold;
     font-size: 1.0em;
+    font-weight: bold;
 }
+
 #centercontent code { color: #080; }
 
 .comment {
@@ -140,18 +141,18 @@ dfn { font-style: italic; }
 .el { font-weight: bold; }
 
 .employ {
-    text-align: left;
-    font-size: 75%;
     color: black;
+    font-size: 75%;
+    text-align: left;
 }
 
 #feed {
-    text-align: left;
     margin: 5px 20px 0 0;
+    text-align: left;
 }
 #feedfp {
-    text-align: left;
     margin: 10px 20px 0 0;
+    text-align: left;
 }
 
 #search > form {
@@ -159,35 +160,40 @@ dfn { font-style: italic; }
 }
 
 h1 {
-    position: absolute; left: 8px; top: 4px;
     font-size: 30px;
     font-weight: normal;
+    left: 8px;
     margin: 2px 1px 0 2px;
+    position: absolute; 
+    top: 4px;
 }
 .h2 {
-    font-family: Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 18px;
     color: #444;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
 }
 .h3 {
     font-family: Verdana, sans-serif;
-    font-weight: bold;
     font-size: 16px;
+    font-weight: bold;
 }
 
 .hide { display: none; }
 
-#potd img { margin-left: -4px; border: 0; }
+#potd img {
+    border: 0;
+    margin-left: -4px;
+}
 
 #rightcontent img { border: 0; }
 
 img.inline {
-    float: right;
-    margin-top: 10px;
-    margin-left: 15px;
-    margin-bottom: 15px;
     box-shadow: 3px 3px 8px #222;
+    float: right;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
 }
 
 #centercontent li {
@@ -198,7 +204,10 @@ img.inline {
 
 li { margin-bottom: 10px; }
 
-.loser { margin-left: 10px; color: red; }
+.loser {
+    color: red;
+    margin-left: 10px;
+}
 
 .main-image {
     float: right;
@@ -215,7 +224,11 @@ img.norm,
     margin-top: 1em;
 }
 
-#rightcontent .misc { text-align: center; margin-bottom: 4px; }
+#rightcontent .misc {
+    margin-bottom: 4px;
+    text-align: center;
+}
+
 .misc { text-align: center; }
 
 .more {
@@ -230,7 +243,10 @@ img.norm,
 
 ol { margin-right: 40px; }
 
-.oo { font-size: 110%; margin-bottom: 4px; }
+.oo {
+    font-size: 110%;
+    margin-bottom: 4px;
+}
 
 #centercontent .os {
     padding-top: 10px;
@@ -243,19 +259,18 @@ ol { margin-right: 40px; }
 
 .ot {
     font-family: Verdana, sans-serif;
-    font-weight: bold;
     font-size: 1.0em;
+    font-weight: bold;
 }
 
 .caption p {
-    text-align: right;
+    /* hyphens: auto; */
+    margin-bottom: 20px;
     margin-left: 40px;
     margin-right: 15px;
-    margin-bottom: 20px;
     margin-top: 0;
-    /* hyphens: auto; */
+    text-align: right;
 }
-
 
 /* trying to compensate for mobile; work-in-progress */
 @media screen and (min-width: 1000px) {
@@ -274,11 +289,11 @@ ol { margin-right: 40px; }
     }
 }
 #centercontent > p {
-    margin: 0.5em 0 0.5em 0;
-    /* hyphens: auto; */
     /* color: #444444;
     color: #425663; */
     color: #535353;
+    /* hyphens: auto; */
+    margin: 0.5em 0 0.5em 0;
 }
 
 .comment-a p,
@@ -288,14 +303,14 @@ ol { margin-right: 40px; }
 }
 
 #commentHere p {
+    font-style: italic;
     /* hyphens: auto; */
     text-align: center;
-    font-style: italic;
 }
 
 #footer p {
-    /* hyphens: auto; */
     font-size: 80%;
+    /* hyphens: auto; */
     text-align: center;
 }
 
@@ -327,23 +342,23 @@ ol { margin-right: 40px; }
 }
 
 .principles {
-    margin-top: 3px;
     margin-bottom: 4px;
+    margin-top: 3px;
 }
 
 .principlesFront {
-    margin-top: 5px;
     margin-bottom: 4px;
+    margin-top: 5px;
 }
 
 #rightcontent {
     font-size: 0.95em;
     line-height: 1.45;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0;
     top: 0; right: 0;
     width: 212px;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 @media screen and (min-width: 560px) {
     #rightcontent {
@@ -353,8 +368,8 @@ ol { margin-right: 40px; }
     }
 }
 .score {
-    text-align: right;
     margin-right: 5px;
+    text-align: right;
 }
 .scoreTH {
     margin-left: 3px;
@@ -362,8 +377,10 @@ ol { margin-right: 40px; }
 }
 
 #search {
-    position: absolute; right: 5px; top: 31px;
     /* font-weight: bold; */
+    position: absolute;
+    right: 5px;
+    top: 31px;
 }
 
 .show { display: inline; }
@@ -392,14 +409,19 @@ th.empty { background: #eee; }
 
 .wltable {
     font-size: 120%;
-    margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
 /* for code, from mvim */
-pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-color: #ffffff; }
+pre {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
 .js-String { color: #4a708b; }
 .js-Special { color: #8a2be2; }
 .js-Identifier { color: #458b74; }
@@ -412,10 +434,10 @@ pre { white-space: pre-wrap; font-family: monospace; color: #000000; background-
 .json .pl-en { color: #8250df; }
 .json .pl-c { color: ##6e7781; }
 .json pre {
-    width: auto;
-    height: auto;
-    padding: 10px;
     background-color: #eee;
-    overflow:auto;
+    height: auto;
     margin-inline-end: -35em;
+    overflow:auto;
+    padding: 10px;
+    width: auto;
 }
