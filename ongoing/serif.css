@@ -1,3 +1,6 @@
+body {
+    max-width: 90vw;
+}
 a {
     text-decoration: none;
 }
@@ -215,6 +218,10 @@ li { margin-bottom: 10px; }
     float: right;
     margin-bottom: 10px;
 }
+img.norm {
+    box-shadow: 3px 3px 8px #222;
+    width: 100%;
+}
 
 #rightcontent .misc { text-align: center; margin-bottom: 4px; }
 .misc { text-align: center; }
@@ -260,30 +267,18 @@ ol { margin-right: 40px; }
 
 /* trying to compensate for mobile; work-in-progress */
 @media screen and (min-width: 1000px) {
-    #centercontent .os {
-        /* text-align: justify; */
-    }
     body {
         max-width: 800px;
+    }
+    img.norm {
+        width: initial;
+    }
+    #centercontent .os {
+        /* text-align: justify; */
     }
     #centercontent p {
         /* text-align: justify; */
         font-size: 110%;
-    }
-    img.norm {
-        box-shadow: 3px 3px 8px #222;
-    }
-}
-@media screen and (max-width: 1000px) {
-    body {
-        max-width: 90vw;
-    }
-    #centercontent p {
-        /*font-size: 85%;*/
-    }
-    img.norm {
-        width: 100%;
-        box-shadow: 3px 3px 8px #222;
     }
 }
 #centercontent > p {
