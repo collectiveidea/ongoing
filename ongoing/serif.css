@@ -15,6 +15,78 @@ body.bp-body {
     padding: 0;
 }
 
+/* layout styles */
+#center-and-right {
+    position: relative;
+}
+
+#centercontent {
+    background: #fff;
+    line-height: 1.45;
+    padding-left: 8px;
+}
+
+#rightcontent {
+    font-size: 0.95em;
+    line-height: 1.45;
+    margin: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    top: 0; right: 0;
+    width: 212px;
+}
+@media screen and (min-width: 560px) {
+    #centercontent {
+        margin-right: 240px;
+    }
+    #rightcontent {
+        border-left: 1px solid #040;
+        padding-left: 10px;
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 888px) {
+    body {
+        max-width: 800px;
+    }
+    img.norm {
+        width: initial;
+    }
+    #centercontent .os {
+        /* text-align: justify; */
+    }
+    #centercontent p {
+        /* text-align: justify; */
+        font-size: 110%;
+    }
+}
+
+@supports (display: grid) {
+    @media screen and (min-width: 560px) {
+        #center-and-right {
+            display: grid;
+            grid-gap: 17px;
+            grid-template-columns: 1fr 223px;
+            max-width: 800px;
+        }
+        #centercontent {
+            margin-right: 0;
+            position: relative;
+        }
+        #rightcontent {
+            align-self: start;
+            margin-top: 1em;
+            position: relative;
+        }
+    }
+    @media screen and (min-width: 888px) {
+        #center-and-right {
+            grid-template-columns: 560px 223px;
+        }
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -95,21 +167,6 @@ html>body #banner, html>body #bp-banner {
     margin-bottom: 30px;
 }
 
-#center-and-right {
-    position: relative;
-}
-
-#centercontent {
-    background: #fff;
-    line-height: 1.45;
-    padding-left: 8px;
-}
-
-@media screen and (min-width: 560px) {
-    #centercontent {
-        margin-right: 240px;
-    }
-}
 
 code {
     font-family: monospace;
@@ -272,22 +329,6 @@ ol { margin-right: 40px; }
     text-align: right;
 }
 
-/* trying to compensate for mobile; work-in-progress */
-@media screen and (min-width: 1000px) {
-    body {
-        max-width: 800px;
-    }
-    img.norm {
-        width: initial;
-    }
-    #centercontent .os {
-        /* text-align: justify; */
-    }
-    #centercontent p {
-        /* text-align: justify; */
-        font-size: 110%;
-    }
-}
 #centercontent > p {
     /* color: #444444;
     color: #425663; */
@@ -351,22 +392,6 @@ ol { margin-right: 40px; }
     margin-top: 5px;
 }
 
-#rightcontent {
-    font-size: 0.95em;
-    line-height: 1.45;
-    margin: 0;
-    padding-bottom: 0;
-    padding-top: 0;
-    top: 0; right: 0;
-    width: 212px;
-}
-@media screen and (min-width: 560px) {
-    #rightcontent {
-        border-left: 1px solid #040;
-        padding-left: 10px;
-        position: absolute;
-    }
-}
 .score {
     margin-right: 5px;
     text-align: right;
