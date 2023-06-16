@@ -52,6 +52,7 @@ a {
 }
 
 #banner {
+    background-color: #333;
     color: #fff;
     /* Replace background here */
     background-image: url("redclouds60.jpg");
