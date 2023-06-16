@@ -1,0 +1,31 @@
+{
+  "ignoreFiles": [
+    "node_modules",
+    "vendor"
+  ],
+  "overrides": [
+  ],
+  rules: {
+    "indentation": 4,
+    "no-duplicate-selectors": true,
+    "property-no-vendor-prefix": [
+      true, {
+        "ignoreProperties": [
+          "appearance",
+          "backdrop-filter",
+          "backface-visibility",
+          "hyphens",
+          "scroll-chaining",
+          "user-select"
+        ]
+      }
+    ],
+    "value-no-vendor-prefix": [
+      true, {
+        "ignoreValues": [
+          "sticky"
+        ]
+      }
+    ]
+  }
+}
