@@ -222,6 +222,12 @@ img.norm {
     width: 100%;
 }
 
+img.norm,
+.main-image img,
+.misc img {
+    margin-top: 1em;
+}
+
 #rightcontent .misc { text-align: center; margin-bottom: 4px; }
 .misc { text-align: center; }
 
