@@ -1,3 +1,11 @@
+# Context
+The other day @timbray posted:
+
+<a href="https://cosocial.ca/@timbray/110543834889537732"><img width="546" alt="image" src="https://github.com/collectiveidea/ongoing/assets/274/6c81ccb2-0a57-42bf-9ff6-eb63b7471247">
+</a>
+
+@danielmorrison volunteered @mattslack as tribute.
+
 # The Ask
 
 > Currently my blog https://www.tbray.org/ongoing relies on a single static CSS file at https://www.tbray.org/ongoing/serif.css (Many years ago I used to offer serif and sans-serif variants of the blog).
@@ -14,11 +22,11 @@
 
 ## 1. Readability
 
-Add a viewport meta tag (Tim will make these changes to production). This will prevent some of the truly weird font-size issues.
-```
-<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-```
-Also, stack the `#rightcontent` under the `#centercontent` until the viewport is wide enough to support both (560px seemed like a reasonable breakpoint, but we can change this depending on feedback).
+* [5e05a3c](https://github.com/collectiveidea/ongoing/commit/5e05a3cea3463cd064b42d1f8d9020a701528fa0) Added a viewport meta tag (Tim will make these changes to production). This will prevent some of the truly weird font-size issues.
+    ```
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    ```
+* [7ecb2e8](https://github.com/collectiveidea/ongoing/commit/7ecb2e826da540739ffb8c3ab155c78da2c56721) Stacked the `#rightcontent` under the `#centercontent` until the viewport is wide enough to support both (560px seemed like a reasonable breakpoint, but we can change this depending on feedback).
 
 ## 2. Tall narrow images and wrapping text
 
@@ -52,17 +60,20 @@ The first `<li>` doesn’t get paragraph stylings at all, because it’s been pu
 
 ## 5. Spacing above images
 
-Added some spacing.
+* [6f9a813](https://github.com/collectiveidea/ongoing/commit/6f9a813b2348bd22e5c0efce879808603d19f83c) Added some spacing.
 
 ## 6. Fix anything hideously wrong
 
-Fixed one syntax error (poorly closed comment).
-
-Not necessarily a lot of stuff is _wrong_, but there days could be spent tweaking given the chance.
+Not necessarily a lot of stuff is _wrong_, but days could be spent tweaking given the chance.
 
 There are some stylistic changes that could be made (e.g. reorganizing into more logical, or specificity based, chunks), I'd argue that it's for "maintainability" but a lot of it is just personal preference (like my hatred of id-based selectors).
 
-There's a lot of `absolute` positioning used for layout. I'd like to use grid layout, but that leads to some problems extending images to the left.
+* [7479e65](https://github.com/collectiveidea/ongoing/commit/7479e657da9283db2bc84cd2a0491836ca28f785) Fixed one syntax error (poorly closed comment).
+
+* [5e12d60](https://github.com/collectiveidea/ongoing/commit/5e12d602c1b04881440002bfe7fabbdefc6c8440) Swapped out absolute positioning for the column layout for grid (where supported).
+
+    We could refactor the banner in the same way, but there's a strong chance the search will overlap the title (there is with the existing absolute positioning too), so we need to think about how best to jigger the design. (Taller banner? Smaller headline type? Something else?)
+
 
 
 
