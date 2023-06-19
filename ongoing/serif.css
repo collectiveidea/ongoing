@@ -24,7 +24,6 @@ body.bp-body {
 #centercontent {
     background: #fff;
     line-height: 1.45;
-    padding-left: 8px;
 }
 
 #rightcontent {
@@ -39,6 +38,7 @@ body.bp-body {
 @media screen and (min-width: 560px) {
     #centercontent {
         margin-right: 240px;
+        padding-left: 8px;
     }
     #rightcontent {
         border-left: 1px solid #040;
