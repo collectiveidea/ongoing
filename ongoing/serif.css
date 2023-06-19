@@ -1,4 +1,5 @@
 body {
+    --body-half-width: 45vw;
     background: #fff;
     font-family: Verdana, Arial, Helvetica, sans-serif;
     color: #535353;
@@ -48,6 +49,7 @@ body.bp-body {
 
 @media screen and (min-width: 888px) {
     body {
+        --body-half-width: 400px;
         max-width: 800px;
     }
     img.norm {
@@ -65,10 +67,13 @@ body.bp-body {
 @supports (display: grid) {
     @media screen and (min-width: 560px) {
         #center-and-right {
+            --grid-gap: 17px;
+            --main-col: calc(90vw - (var(--side-col) + var(--grid-gap)));
+            --side-col: 223px;
             display: grid;
-            grid-gap: 17px;
-            grid-template-columns: 1fr 223px;
-            max-width: 800px;
+            grid-gap: var(--grid-gap);
+            grid-template-columns: var(--main-col) var(--side-col);
+            width: 100%;
         }
         #centercontent {
             margin-right: 0;
@@ -82,7 +87,7 @@ body.bp-body {
     }
     @media screen and (min-width: 888px) {
         #center-and-right {
-            grid-template-columns: 560px 223px;
+            --main-col: 560px;
         }
     }
 }
@@ -275,9 +280,20 @@ li { margin-bottom: 10px; }
     float: right;
     margin-bottom: 10px;
 }
+.main-image img {
+    max-width: 100%;
+}
+@media screen and (min-width: 560px) {
+    .main-image img {
+        /* 100vw / 2 = The centerline
+         * var(--body-half-width) - (var(--side-col) + var(--grid-gap)) = how far the main column extends past the centerline
+         */
+        max-width: calc((100vw / 2) + (var(--body-half-width) - (var(--side-col, 0) + var(--grid-gap, 0))));
+        width: initial;
+    }
+}
 img.norm {
     box-shadow: 3px 3px 8px #222;
-    width: 100%;
 }
 
 img.norm,
