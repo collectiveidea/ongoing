@@ -217,12 +217,17 @@ dfn { font-style: italic; }
 }
 
 h1 {
-    font-size: 30px;
+    font-size: 20px;
     font-weight: normal;
     left: 8px;
     margin: 2px 1px 0 2px;
     position: absolute; 
     top: 4px;
+}
+@media screen and (min-width: 560px) {
+    h1 {
+        font-size: 30px;
+    }
 }
 .h2 {
     color: #444;
