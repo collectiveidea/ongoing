@@ -195,6 +195,10 @@ code {
 .comment-b {
     background: #ddd;
 }
+.comment-a a,
+.comment-b a{
+    word-break: break-all;
+}
 
 span.dashes { white-space: nowrap; }
 
