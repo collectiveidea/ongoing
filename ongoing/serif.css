@@ -289,10 +289,11 @@ li { margin-bottom: 10px; }
 }
 @media screen and (min-width: 560px) {
     .main-image img {
-        /* 100vw / 2 = The centerline
+        --gutter: 20px; /* space between the image and the left edge of the viewport */
+        /* 100vw / 2 = The centerline of the viewport
          * var(--body-half-width) - (var(--side-col) + var(--grid-gap)) = how far the main column extends past the centerline
          */
-        max-width: calc((100vw / 2) + (var(--body-half-width) - (var(--side-col, 0) + var(--grid-gap, 0))));
+        max-width: calc(((100vw / 2) + (var(--body-half-width) - (var(--side-col, 0) + var(--grid-gap, 0)))) - var(--gutter)) ;
         width: initial;
     }
 }
