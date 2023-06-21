@@ -1,7 +1,7 @@
 # Context
 The other day @timbray posted:
 
-<a href="https://cosocial.ca/@timbray/110543834889537732"><img width="546" alt="image" src="https://github.com/collectiveidea/ongoing/assets/274/6c81ccb2-0a57-42bf-9ff6-eb63b7471247">
+<a href="https://cosocial.ca/@timbray/110543834889537732"><img width="546" alt="" src="./images/toot.png">
 </a>
 
 @danielmorrison volunteered @mattslack as tribute.
@@ -44,7 +44,7 @@ It looks like, at some point, things are getting mangled.
 
 This is what the server kicks out:
 
-<img width="473" alt="curl-output" src="https://github.com/collectiveidea/ongoing/assets/274/b2853870-db8e-4154-acbc-a2fc73b64b79">
+<img width="473" alt="Output from curl, showing invalid markup" src="./images/curl-output.png">
 
 So there’s two problems with that:
 
@@ -53,7 +53,7 @@ So there’s two problems with that:
 
 This is how it’s interpreted by the browser:
 
-<img width="473" alt="browser-inspector" src="https://github.com/collectiveidea/ongoing/assets/274/0254dfb3-60a8-416b-a678-b7fa20f26b95">
+<img width="473" alt="The DOM tree in a browser, showing how the invalid markup is being interpreted" src="./images/browser-inspector.png">
 
 Since the `<ul>` can’t be inside the `<p>` that gets auto-closed.
 The orphaned closing tag inside the `<li>` gets auto-opened, but is empty and doesn’t really affect anything.
