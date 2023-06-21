@@ -299,7 +299,7 @@ li { margin-bottom: 10px; }
         /* 100vw / 2 = The centerline of the viewport
          * var(--body-half-width) - (var(--side-col) + var(--grid-gap)) = how far the main column extends past the centerline
          */
-        max-width: calc(((100vw / 2) + (var(--body-half-width) - (var(--side-col, 0) + var(--grid-gap, 0)))) - var(--gutter)) ;
+        max-width: calc(((100vw / 2) + (var(--body-half-width) - (var(--side-col, 0) + var(--grid-gap, 0)))) - var(--gutter));
         width: initial;
     }
 }
