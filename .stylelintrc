@@ -5,7 +5,10 @@
   ],
   "overrides": [
   ],
-  rules: {
+  "rules": {
+    "declaration-property-unit-disallowed-list": {
+      "font-size": ["px", "vw", "vh", "s"]
+    },
     "indentation": 4,
     "no-duplicate-selectors": true,
     "property-no-vendor-prefix": [
