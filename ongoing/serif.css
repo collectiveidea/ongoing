@@ -227,14 +227,19 @@ dfn { font-style: italic; }
 }
 
 h1 {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: normal;
     left: 8px;
     margin: 2px 1px 0 2px;
-    position: absolute; 
+    position: absolute;
     top: 4px;
 }
 @media screen and (min-width: 560px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (min-width: 800px) {
     h1 {
         font-size: 1.875rem;
     }
@@ -429,10 +434,26 @@ ol { margin-right: 40px; }
 }
 
 #search {
+    bottom: 6.5px;
+    font-size: 0.5rem;
     /* font-weight: bold; */
     position: absolute;
     right: 5px;
-    top: 31px;
+}
+@media (min-width: 560px) {
+    #search {
+        bottom: unset;
+        font-size: 0.75rem;
+        top: 31px;
+    }
+}
+@media (min-width: 800px) {
+    #search {
+        font-size: 1rem;
+    }
+}
+#search input {
+    font-size: inherit;
 }
 
 .show { display: inline; }
