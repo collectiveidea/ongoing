@@ -18,6 +18,7 @@ The other day @timbray posted:
 > 5. The text comes too close to the top of images (OK, I could fix that one).
 > 6. I’d like anything that is hideously wrong in my current CSS replaced with something modern and good.
 
+
 # First pass
 
 ## 1. Readability
@@ -75,6 +76,24 @@ There are some stylistic changes that could be made (e.g. reorganizing into more
     We could refactor the banner in the same way, but there's a strong chance the search will overlap the title (there is with the existing absolute positioning too), so we need to think about how best to jigger the design. (Taller banner? Smaller headline type? Something else?)
 
 
+# Second Pass
 
+## 1. Readability
 
+* Shrink the `h1` on smaller screens
 
+## 3. Images expanding to the left
+
+* Make sure the grid layout doesn't en-narrow images. Using `fr` units for the column prevented expanding outside the column, so we needed to define it with something else (pixels in this instance, though I believe other units would work)
+* Set the max-width of the image so it goes to the edge of the viewport, but not wider.
+
+## New: Make sure the full-size image pages render correctly
+
+* 32a5866 Fix my fix to the syntax error from 7479e65
+* f102e87 Prevent the image caption from growing the page
+
+# Additional revisions
+
+* Make the header text smaller where appropriate
+* Numerous margin/padding/spacing tweaks
+* Update any pixel based font-sizes to use rems
